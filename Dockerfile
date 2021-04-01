@@ -5,7 +5,6 @@ ARG FFMPEG_ARCH="amd64"
 
 ## Install SSH server
 # RUN yum update -y --enableplugin fastestmirror # too slow
-
 RUN yum install --enableplugin fastestmirror -y openssh-server.x86_64 xorg-x11-xauth.x86_64 xorg-x11-apps.x86_64 python3-tkinter.x86_64 xz jq ImageMagick.x86_64 &&\
     head -c 64 /dev/urandom | ssh-keygen -q -N "" -t ed25519 -f /etc/ssh/ssh_host_ed25519_key -a 10000 &&\
     ssh-keygen -q -P "" -t ed25519 -f /root/.ssh/robot_manual_test_key -a 1000 &&\

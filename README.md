@@ -40,3 +40,4 @@ From Visual Studio Code, you can run one of the following tasks
 | SCREEN_HEIGHT               | Set the framebuffer screen height                        | 1080     |
 | SCREEN_WIDTH                | Set the framebuffer screen width                         | 1920     |
 
+# AllinOneRobot

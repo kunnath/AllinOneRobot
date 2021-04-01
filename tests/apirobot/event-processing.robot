@@ -13,17 +13,17 @@ ${apitest}    ${CURDIR}/scripts/compare-clips.sh -d ${API_DOMAIN}
 ${path}       ${CURDIR}/scripts
 
 *** Test Cases ***
-Event-process and verify the massage response
-    [Tags]                         apistreaming                                  clip
-    Log                            ${path}
-    Log                            ${apitest}
-    List Files In Directory        ${path}
-    ${rc}                          ${output} =                                Run And Return Rc And Output    ${path}/create-event.sh
-    sleep                          5s
-    Should Be Equal As Integers    ${rc}                                      0
-    log                            ${output}
-    Should Contain                 ${output}                                  ${resp}
-    log                            ${resp}
+# Event-process and verify the massage response
+#     [Tags]                         apistreaming                                  clip
+#     Log                            ${path}
+#     Log                            ${apitest}
+#     List Files In Directory        ${path}
+#     ${rc}                          ${output} =                                Run And Return Rc And Output    ${path}/create-event.sh
+#     sleep                          5s
+#     Should Be Equal As Integers    ${rc}                                      0
+#     log                            ${output}
+#     Should Contain                 ${output}                                  ${resp}
+#     log                            ${resp}
 
 new and old video clip validation using api testing
     [Tags]                         apistreaming                                  clip
