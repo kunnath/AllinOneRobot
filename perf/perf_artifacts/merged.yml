@@ -1,0 +1,81 @@
+---
+execution:
+- concurrency: 2
+  hold-for: 3m
+  ramp-up: 1m
+  scenario: smartfrog
+reporting:
+- criteria:
+  - avg-rt of IndexPage>150ms for 10s, stop as failed
+  - fail of CheckoutPage>50% for 10s, stop as failed
+  module: passfail
+- dump-csv: filename to export data in CSV format
+  dump-xml: filename to export data in XML format
+  failed-labels: false
+  module: final-stats
+  percentiles: true
+  summary: true
+  summary-labels: false
+  test-duration: true
+scenarios:
+  smartfrog:
+    headers:
+      Accept: '*/*'
+      Content-Type: application/x-www-form-urlencoded
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36
+    requests:
+    - do:
+      - body:
+          q: |-
+            <a i=0>See what </a><a i=1>your pet is doing </a><a i=2>from anywhere
+            </a>
+        headers: {}
+        label: https://translate.googleapis.com/translate_a/t?anno=3&client=te_lib&format=html&v=1.0&key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw&logld=vTE_20200210_00&sl=de&tl=en&sp=nmt&tc=1&dom=1&sr=1&tk=389505.215566&mode=1
+        method: POST
+        url: https://translate.googleapis.com/translate_a/t?anno=3&client=te_lib&format=html&v=1.0&key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw&logld=vTE_20200210_00&sl=de&tl=en&sp=nmt&tc=1&dom=1&sr=1&tk=389505.215566&mode=1
+      - body:
+          q: |-
+            <a i=0>See </a><a i=1>if your child is fine </a><a i=2>around the clock
+            </a>
+        headers: {}
+        label: https://translate.googleapis.com/translate_a/t?anno=3&client=te_lib&format=html&v=1.0&key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw&logld=vTE_20200210_00&sl=de&tl=en&sp=nmt&tc=1&dom=1&sr=1&tk=330622.241905&mode=1
+        method: POST
+        url: https://translate.googleapis.com/translate_a/t?anno=3&client=te_lib&format=html&v=1.0&key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw&logld=vTE_20200210_00&sl=de&tl=en&sp=nmt&tc=1&dom=1&sr=1&tk=330622.241905&mode=1
+      - body:
+          q: |-
+            <a i=0>Always see if
+             </a><a i=1>your grandparents are doing well</a>
+        headers: {}
+        label: https://translate.googleapis.com/translate_a/t?anno=3&client=te_lib&format=html&v=1.0&key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw&logld=vTE_20200210_00&sl=de&tl=en&sp=nmt&tc=1&dom=1&sr=1&tk=652476.1003315&mode=1
+        method: POST
+        url: https://translate.googleapis.com/translate_a/t?anno=3&client=te_lib&format=html&v=1.0&key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw&logld=vTE_20200210_00&sl=de&tl=en&sp=nmt&tc=1&dom=1&sr=1&tk=652476.1003315&mode=1
+      force-parent-sample: false
+      transaction: Test
+    - do:
+      - body:
+          q: |-
+            <a i=0>Protect your family
+             </a><a i=1>easily with Smartfrog</a>
+        headers: {}
+        label: https://translate.googleapis.com/translate_a/t?anno=3&client=te_lib&format=html&v=1.0&key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw&logld=vTE_20200210_00&sl=de&tl=en&sp=nmt&tc=1&dom=1&sr=1&tk=328662.243801&mode=1
+        method: POST
+        url: https://translate.googleapis.com/translate_a/t?anno=3&client=te_lib&format=html&v=1.0&key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw&logld=vTE_20200210_00&sl=de&tl=en&sp=nmt&tc=1&dom=1&sr=1&tk=328662.243801&mode=1
+      - body:
+          q: |-
+            <a i=0>Protect your family
+             </a><a i=1>easily with Smartfrog</a>
+        headers: {}
+        label: https://translate.googleapis.com/translate_a/t?anno=3&client=te_lib&format=html&v=1.0&key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw&logld=vTE_20200210_00&sl=de&tl=en&sp=nmt&tc=1&dom=1&sr=1&tk=328662.243801&mode=1
+        method: POST
+        url: https://translate.googleapis.com/translate_a/t?anno=3&client=te_lib&format=html&v=1.0&key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw&logld=vTE_20200210_00&sl=de&tl=en&sp=nmt&tc=1&dom=1&sr=1&tk=328662.243801&mode=1
+      - body:
+          q: |-
+            <a i=0>See what&#39;s happening </a><a i=1>at home </a><a i=2>from anywhere
+            </a>
+        headers: {}
+        label: https://translate.googleapis.com/translate_a/t?anno=3&client=te_lib&format=html&v=1.0&key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw&logld=vTE_20200210_00&sl=de&tl=en&sp=nmt&tc=1&dom=1&sr=1&tk=469685.102714&mode=1
+        method: POST
+        url: https://translate.googleapis.com/translate_a/t?anno=3&client=te_lib&format=html&v=1.0&key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw&logld=vTE_20200210_00&sl=de&tl=en&sp=nmt&tc=1&dom=1&sr=1&tk=469685.102714&mode=1
+      force-parent-sample: false
+      transaction: login
+

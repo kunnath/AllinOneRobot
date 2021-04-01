@@ -1,0 +1,6 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,success,bytes,grpThreads,allThreads,Latency,Hostname,Connect
+1601907345628,5235,https://www.sf-test1.com/de-de,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,simple-ThreadStarter 1-5,false,2466,5,5,0,aed9fe4ad1b8,5235
+1601907322011,1503,https://www.sf-test1.com/de-de,200,OK,simple-ThreadStarter 1-1,true,36141,5,5,1427,aed9fe4ad1b8,1109
+1601907333624,17237,https://www.sf-test1.com/de-de,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,simple-ThreadStarter 1-3,false,2466,5,5,0,aed9fe4ad1b8,17237
+1601907327614,1431,https://www.sf-test1.com/de-de,200,OK,simple-ThreadStarter 1-2,true,36155,5,5,1341,aed9fe4ad1b8,314
+1601907339615,2109,https://www.sf-test1.com/de-de,200,OK,simple-ThreadStarter 1-4,true,36133,5,5,1245,aed9fe4ad1b8,533

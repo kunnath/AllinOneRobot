@@ -1,0 +1,37 @@
+{
+ "execution": [
+  {
+   "concurrency": 10,
+   "ramp-up": "1m",
+   "hold-for": "2m30s",
+   "scenario": "simple"
+  }
+ ],
+ "scenarios": {
+  "simple": {
+   "think-time": 0.75,
+   "requests": [
+    "https://www.google.com"
+   ]
+  }
+ },
+ "reporting": [
+  {
+   "module": "passfail",
+   "criteria": [
+    "avg-rt of IndexPage>150ms for 10s, stop as failed",
+    "fail of CheckoutPage>50% for 10s, stop as failed"
+   ]
+  },
+  {
+   "module": "final-stats",
+   "summary": true,
+   "percentiles": true,
+   "summary-labels": false,
+   "failed-labels": false,
+   "test-duration": true,
+   "dump-xml": "p.output.xml",
+   "dump-csv": "p.output.csv"
+  }
+ ]
+}

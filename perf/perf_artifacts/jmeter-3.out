@@ -1,0 +1,6 @@
+Created the tree successfully using /tmp/artifacts/modified_requests-3.jmx
+Starting standalone test @ Mon Oct 05 14:02:09 UTC 2020 (1601906529229)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+Command: Shutdown received from /127.0.0.1
+Tidying up ...    @ Mon Oct 05 14:08:55 UTC 2020 (1601906935013)
+... end of run

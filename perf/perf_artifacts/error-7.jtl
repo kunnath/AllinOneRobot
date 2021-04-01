@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="13765" lt="0" ts="1601908270566" s="false" lb="https://www.google.com" rc="Non HTTP response code: org.apache.http.NoHttpResponseException" rm="Non HTTP response message: www.google.com:443 failed to respond" tn="simple-ThreadStarter 1-6" dt="text" de="" by="2061" ng="10" na="10">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: www.google.com
+User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_265)
+</requestHeader>
+  <responseData class="java.lang.String">org.apache.http.NoHttpResponseException: www.google.com:443 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:850)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:561)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1282)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1271)
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:627)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:551)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:490)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:748)
+</responseData>
+  <cookies class="java.lang.String">NID=204=xNfza3ZWv6iMiZ8vVRcUWG3H1i2GucujcfOX42R59DqKmxL8xF_4VelfxWGNvcv752b-f4c8Cv84tUI0wM5oUFF51FIe3gxU2zSMiZnJbG2BrB3lZclQ4t_WNhocTKTCcnNv7-LizMgHJ-IbtjrSRwz1tcoieSo2Vlk0F9JtT9w</cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.google.com/</java.net.URL>
+</httpSample>
+<httpSample t="13189" lt="0" ts="1601908293201" s="false" lb="https://www.google.com" rc="Non HTTP response code: javax.net.ssl.SSLHandshakeException" rm="Non HTTP response message: Remote host closed connection during handshake" tn="simple-ThreadStarter 1-7" dt="text" de="" by="2721" ng="10" na="10">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: www.google.com
+User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_265)
+</requestHeader>
+  <responseData class="java.lang.String">javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1009)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1388)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1416)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1400)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:436)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)
+	at org.apache.jmeter.protocol.http.sampler.hc.LazyLayeredConnectionSocketFactory.connectSocket(LazyLayeredConnectionSocketFactory.java:92)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl$JMeterDefaultHttpClientConnectionOperator.connect(HTTPHC4Impl.java:326)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:850)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:561)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1282)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1271)
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:627)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:551)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:490)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at sun.security.ssl.InputRecord.read(InputRecord.java:505)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:990)
+	... 26 more
+</responseData>
+  <cookies class="java.lang.String">NID=204=uMO02p3on3lQbaQbYm2oOfoEoq6KSF18OsLAgStNY5Iwv5C5gN9gO9TNx6I86Q9YSMxz459zhX09BG7Xz-ekmOtjEngIsUaxaeDFbS9bQq4a_m03A6S4XxMznu43OuocGdOhzQNb554UGMUe4aW6-_8WAjM3qk-DtES1fW-Tebw</cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.google.com/</java.net.URL>
+</httpSample>
+<httpSample t="17221" lt="0" ts="1601908289745" s="false" lb="https://www.google.com" rc="Non HTTP response code: org.apache.http.NoHttpResponseException" rm="Non HTTP response message: www.google.com:443 failed to respond" tn="simple-ThreadStarter 1-1" dt="text" de="" by="2061" ng="10" na="10">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: www.google.com
+User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_265)
+</requestHeader>
+  <responseData class="java.lang.String">org.apache.http.NoHttpResponseException: www.google.com:443 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:850)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:561)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1282)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1271)
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:627)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:551)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:490)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:748)
+</responseData>
+  <cookies class="java.lang.String">NID=204=vAXWDqCOQhtPn21odgP-DiskVNPXqFvz0oB4vbAlqMsiaVoD9HhcmrJn2i1vf1Rcx5l_pfVt00XNLxlDRcgklBFhR0aQmY5RPkjQxuHZXFAIlQWAsiyP9nLBSwFmsKeuLEdCA8y73k5Uyq6lTmc4iULSNaTY-iWuCq1NLaSC1X0</cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.google.com/</java.net.URL>
+</httpSample>
+<httpSample t="17878" lt="0" ts="1601908310232" s="false" lb="https://www.google.com" rc="Non HTTP response code: javax.net.ssl.SSLHandshakeException" rm="Non HTTP response message: Remote host closed connection during handshake" tn="simple-ThreadStarter 1-7" dt="text" de="" by="2721" ng="10" na="10">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: www.google.com
+User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_265)
+</requestHeader>
+  <responseData class="java.lang.String">javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1009)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1388)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1416)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1400)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:436)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)
+	at org.apache.jmeter.protocol.http.sampler.hc.LazyLayeredConnectionSocketFactory.connectSocket(LazyLayeredConnectionSocketFactory.java:92)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl$JMeterDefaultHttpClientConnectionOperator.connect(HTTPHC4Impl.java:326)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:850)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:561)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1282)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1271)
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:627)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:551)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:490)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at sun.security.ssl.InputRecord.read(InputRecord.java:505)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:990)
+	... 26 more
+</responseData>
+  <cookies class="java.lang.String">NID=204=uMO02p3on3lQbaQbYm2oOfoEoq6KSF18OsLAgStNY5Iwv5C5gN9gO9TNx6I86Q9YSMxz459zhX09BG7Xz-ekmOtjEngIsUaxaeDFbS9bQq4a_m03A6S4XxMznu43OuocGdOhzQNb554UGMUe4aW6-_8WAjM3qk-DtES1fW-Tebw</cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.google.com/</java.net.URL>
+</httpSample>
+<httpSample t="11177" lt="0" ts="1601908326608" s="false" lb="https://www.google.com" rc="Non HTTP response code: javax.net.ssl.SSLHandshakeException" rm="Non HTTP response message: Remote host closed connection during handshake" tn="simple-ThreadStarter 1-4" dt="text" de="" by="2721" ng="10" na="10">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: www.google.com
+User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_265)
+</requestHeader>
+  <responseData class="java.lang.String">javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1009)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1388)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1416)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1400)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:436)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)
+	at org.apache.jmeter.protocol.http.sampler.hc.LazyLayeredConnectionSocketFactory.connectSocket(LazyLayeredConnectionSocketFactory.java:92)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl$JMeterDefaultHttpClientConnectionOperator.connect(HTTPHC4Impl.java:326)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:850)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:561)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1282)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1271)
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:627)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:551)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:490)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at sun.security.ssl.InputRecord.read(InputRecord.java:505)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:990)
+	... 26 more
+</responseData>
+  <cookies class="java.lang.String">NID=204=S7CakvFlPjIhxtPkKOOA_tWDOTbXzSDpfZbHdKygKu73xAT4BkLG5FFBAcmvtHCB16BQBmGiUo-92Vx3S1oXEyGYJoyPfUfbLLk-A8sOluPWLSoa0nNA0q8vlq6WEeBhJ_7stvoSmJjVW1bMAfJX5N3gLUlBA4djW5gC_1bTcYU</cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.google.com/</java.net.URL>
+</httpSample>
+<httpSample t="17100" lt="0" ts="1601908326203" s="false" lb="https://www.google.com" rc="Non HTTP response code: javax.net.ssl.SSLHandshakeException" rm="Non HTTP response message: Remote host closed connection during handshake" tn="simple-ThreadStarter 1-3" dt="text" de="" by="2721" ng="10" na="10">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: www.google.com
+User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_265)
+</requestHeader>
+  <responseData class="java.lang.String">javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1009)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1388)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1416)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1400)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:436)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)
+	at org.apache.jmeter.protocol.http.sampler.hc.LazyLayeredConnectionSocketFactory.connectSocket(LazyLayeredConnectionSocketFactory.java:92)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl$JMeterDefaultHttpClientConnectionOperator.connect(HTTPHC4Impl.java:326)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:850)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:561)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1282)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1271)
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:627)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:551)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:490)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at sun.security.ssl.InputRecord.read(InputRecord.java:505)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:990)
+	... 26 more
+</responseData>
+  <cookies class="java.lang.String">NID=204=C8_RjTdUxMYTVew6RUHB4XOPkQa-A8YJZQTVHwLDVRzLfVCd5Msn4vFcFAvhScIh0GGVqHf8bPGoqhAxL3OCvvLj_a7c2eBWNSClj57a3dbeVOUh7C1kuXl1a9Y8bSXbPXGjwYsC_WxYm6Qfm_UY9s-3h6Cxy4hmvFIx-3s0beA</cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.google.com/</java.net.URL>
+</httpSample>
+<httpSample t="13992" lt="0" ts="1601908354071" s="false" lb="https://www.google.com" rc="Non HTTP response code: javax.net.ssl.SSLHandshakeException" rm="Non HTTP response message: Remote host closed connection during handshake" tn="simple-ThreadStarter 1-8" dt="text" de="" by="2721" ng="10" na="10">
+  <assertionResult>
+    <name>Timeout Check</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: www.google.com
+User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_265)
+</requestHeader>
+  <responseData class="java.lang.String">javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1009)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1388)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1416)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1400)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:436)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)
+	at org.apache.jmeter.protocol.http.sampler.hc.LazyLayeredConnectionSocketFactory.connectSocket(LazyLayeredConnectionSocketFactory.java:92)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl$JMeterDefaultHttpClientConnectionOperator.connect(HTTPHC4Impl.java:326)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:850)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:561)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1282)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1271)
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:627)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:551)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:490)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at sun.security.ssl.InputRecord.read(InputRecord.java:505)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:990)
+	... 26 more
+</responseData>
+  <cookies class="java.lang.String">NID=204=uywwoyFqr4hWnNkZNoW2fIFfI4sH7Z7ulw96vEUJRcqzmAeXdD1s9WtdbiKXUrG8d5Nkr_8pC_x1aEVsJKT_9YGArHpy52UZMfb_Q2BZGny028URwWn6rtZ0qs3bv7GkmvDwX5Cd1it_JH1WyXB2A7Wn5eYICsam8DBkqRRvWpU</cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.google.com/</java.net.URL>
+</httpSample>
+
+</testResults>

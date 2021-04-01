@@ -1,0 +1,25 @@
+---
+execution:
+- concurrency: 10
+  hold-for: 2m30s
+  ramp-up: 1m
+  scenario: simple
+reporting:
+- criteria:
+  - avg-rt of IndexPage>150ms for 10s, stop as failed
+  - fail of CheckoutPage>50% for 10s, stop as failed
+  module: passfail
+- dump-csv: p.output.csv
+  dump-xml: p.output.xml
+  failed-labels: false
+  module: final-stats
+  percentiles: true
+  summary: true
+  summary-labels: false
+  test-duration: true
+scenarios:
+  simple:
+    requests:
+    - https://www.google.com
+    think-time: 0.75
+

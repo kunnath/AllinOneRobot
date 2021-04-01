@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.5 on linux)" generated="20201019 22:01:00.046" rpa="false">
+<suite id="s1" name="Tests" source="/opt/robotframework/tests">
+<suite id="s1-s1" name="Manualrobot" source="/opt/robotframework/tests/manualrobot">
+<suite id="s1-s1-s1" name="Manualusecase" source="/opt/robotframework/tests/manualrobot/manualusecase">
+<suite id="s1-s1-s1-s1" name="Manutestcase" source="/opt/robotframework/tests/manualrobot/manualusecase/manutestcase.robot">
+<test id="s1-s1-s1-s1-t1" name="Login username and password">
+<kw name="Collect Environmental Condition" library="testkeywords" type="setup">
+<tags>
+<tag>warmup</tag>
+</tags>
+<doc>Test case</doc>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
+<arguments>
+<arg>"" != "${ENV.DEVICE.SERIAL_NUMBER}"</arg>
+<arg>MT_IN</arg>
+<arg>Set Expected Serial Number</arg>
+</arguments>
+<assign>
+<var>${serial_number}</var>
+</assign>
+<msg timestamp="20201019 22:01:00.400" level="INFO">${serial_number} = None</msg>
+<status status="PASS" starttime="20201019 22:01:00.399" endtime="20201019 22:01:00.400"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
+<arguments>
+<arg>"" != "${ENV.DEVICE.SERIAL_NUMBER}"</arg>
+<arg>Set Suite Variable</arg>
+<arg>${ENV.DEVICE.SERIAL_NUMBER}</arg>
+<arg>${serial_number}</arg>
+</arguments>
+<status status="PASS" starttime="20201019 22:01:00.401" endtime="20201019 22:01:00.402"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
+<arguments>
+<arg>"" != "${ENV.DEVICE.LANG}"</arg>
+<arg>MT_IN</arg>
+<arg>Set Expected Language</arg>
+</arguments>
+<assign>
+<var>${lang}</var>
+</assign>
+<kw name="MT_IN" library="manualsetups">
+<arguments>
+<arg>Set Expected Language</arg>
+</arguments>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${ENV.IS_MANUAL}</arg>
+<arg>Get Value From User</arg>
+<arg>Manual Test: ${test_name} &lt; args: @{test_arg} &gt;</arg>
+</arguments>
+<assign>
+<var>${user_input}</var>
+</assign>
+<kw name="Get Value From User" library="Dialogs">
+<doc>Pauses test execution and asks user to input a value.</doc>
+<arguments>
+<arg>Manual Test: ${test_name} &lt; args: @{test_arg} &gt;</arg>
+</arguments>
+<msg timestamp="20201019 22:01:03.448" level="FAIL">No value provided by user.</msg>
+<status status="FAIL" starttime="20201019 22:01:00.407" endtime="20201019 22:01:03.449"></status>
+</kw>
+<status status="FAIL" starttime="20201019 22:01:00.405" endtime="20201019 22:01:03.449"></status>
+</kw>
+<status status="FAIL" starttime="20201019 22:01:00.405" endtime="20201019 22:01:03.449"></status>
+</kw>
+<status status="FAIL" starttime="20201019 22:01:00.402" endtime="20201019 22:01:03.449"></status>
+</kw>
+<status status="FAIL" starttime="20201019 22:01:00.396" endtime="20201019 22:01:03.450"></status>
+</kw>
+<kw name="Abnormal Firmware Update Scenario" library="testkeywords" type="teardown">
+<tags>
+<tag>update</tag>
+</tags>
+<doc>Test case</doc>
+<arguments>
+<arg>232</arg>
+</arguments>
+<kw name="MT" library="manualsetups">
+<arguments>
+<arg>Reset Device</arg>
+<arg>${console_id}</arg>
+</arguments>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${ENV.IS_MANUAL}</arg>
+<arg>Execute Manual Step</arg>
+<arg>Manual Test: ${test_name} &lt; args: @{test_arg} &gt;</arg>
+</arguments>
+<kw name="Execute Manual Step" library="Dialogs">
+<doc>Pauses test execution until user sets the keyword status.</doc>
+<arguments>
+<arg>Manual Test: ${test_name} &lt; args: @{test_arg} &gt;</arg>
+</arguments>
+<msg timestamp="20201019 22:01:05.320" level="FAIL">No value provided by user.</msg>
+<status status="FAIL" starttime="20201019 22:01:03.459" endtime="20201019 22:01:05.320"></status>
+</kw>
+<status status="FAIL" starttime="20201019 22:01:03.458" endtime="20201019 22:01:05.320"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>not ${ENV.IS_MANUAL}</arg>
+<arg>${test_name}</arg>
+<arg>@{test_arg}</arg>
+</arguments>
+<status status="PASS" starttime="20201019 22:01:05.321" endtime="20201019 22:01:05.321"></status>
+</kw>
+<status status="FAIL" starttime="20201019 22:01:03.457" endtime="20201019 22:01:05.322"></status>
+</kw>
+<kw name="Forcely Update Firmware" library="testkeywords">
+<tags>
+<tag>update</tag>
+</tags>
+<doc>Test case</doc>
+<arguments>
+<arg>${console_id}</arg>
+</arguments>
+<kw name="MT" library="manualsetups">
+<arguments>
+<arg>Confirm Device mounts MMC</arg>
+<arg>${console_id}</arg>
+</arguments>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${ENV.IS_MANUAL}</arg>
+<arg>Execute Manual Step</arg>
+<arg>Manual Test: ${test_name} &lt; args: @{test_arg} &gt;</arg>
+</arguments>
+<kw name="Execute Manual Step" library="Dialogs">
+<doc>Pauses test execution until user sets the keyword status.</doc>
+<arguments>
+<arg>Manual Test: ${test_name} &lt; args: @{test_arg} &gt;</arg>
+</arguments>
+<msg timestamp="20201019 22:01:07.062" level="FAIL">No value provided by user.</msg>
+<status status="FAIL" starttime="20201019 22:01:05.324" endtime="20201019 22:01:07.063"></status>
+</kw>
+<status status="FAIL" starttime="20201019 22:01:05.324" endtime="20201019 22:01:07.063"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>not ${ENV.IS_MANUAL}</arg>
+<arg>${test_name}</arg>
+<arg>@{test_arg}</arg>
+</arguments>
+<status status="PASS" starttime="20201019 22:01:07.063" endtime="20201019 22:01:07.064"></status>
+</kw>
+<status status="FAIL" starttime="20201019 22:01:05.323" endtime="20201019 22:01:07.064"></status>
+</kw>
+<kw name="MT" library="manualsetups">
+<arguments>
+<arg>Confirm Rollback Firmware in MMC</arg>
+<arg>${console_id}</arg>
+</arguments>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${ENV.IS_MANUAL}</arg>
+<arg>Execute Manual Step</arg>
+<arg>Manual Test: ${test_name} &lt; args: @{test_arg} &gt;</arg>
+</arguments>
+<kw name="Execute Manual Step" library="Dialogs">
+<doc>Pauses test execution until user sets the keyword status.</doc>
+<arguments>
+<arg>Manual Test: ${test_name} &lt; args: @{test_arg} &gt;</arg>
+</arguments>
+<msg timestamp="20201019 22:01:09.164" level="FAIL">No value provided by user.</msg>
+<status status="FAIL" starttime="20201019 22:01:07.069" endtime="20201019 22:01:09.164"></status>
+</kw>
+<status status="FAIL" starttime="20201019 22:01:07.066" endtime="20201019 22:01:09.164"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>not ${ENV.IS_MANUAL}</arg>
+<arg>${test_name}</arg>
+<arg>@{test_arg}</arg>
+</arguments>
+<status status="PASS" starttime="20201019 22:01:09.165" endtime="20201019 22:01:09.166"></status>
+</kw>
+<status status="FAIL" starttime="20201019 22:01:07.065" endtime="20201019 22:01:09.166"></status>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
+<arguments>
+<arg>${TARGET.CURRENT_FLASH_VERSION} == ${TARGET.RELEASE_FLASH_VERSION}</arg>
+<arg>MT</arg>
+<arg>Device-local FLASH Update</arg>
+<arg>${console_id}</arg>
+</arguments>
+<status status="PASS" starttime="20201019 22:01:09.167" endtime="20201019 22:01:09.167"></status>
+</kw>
+<status status="FAIL" starttime="20201019 22:01:05.322" endtime="20201019 22:01:09.168"></status>
+</kw>
+<status status="FAIL" starttime="20201019 22:01:03.450" endtime="20201019 22:01:09.168">Several failures occurred:
+
+1) No value provided by user.
+
+2) No value provided by user.
+
+3) No value provided by user.</status>
+</kw>
+<doc>Test case documentation
+Test case details</doc>
+<tags>
+<tag>manuals</tag>
+<tag>manualstep</tag>
+</tags>
+<status status="FAIL" starttime="20201019 22:01:00.392" endtime="20201019 22:01:09.175" critical="yes">Setup failed:
+No value provided by user.
+
+Also teardown failed:
+Several failures occurred:
+
+1) No value provided by user.
+
+2) No value provided by user.
+
+3) No value provided by user.</status>
+</test>
+<doc>Integration Test for 2019-01 Release for SF-SH72D001
+Feature: Verbose FLASH update log
+Feature: Double Signature check in update CC/FLASH image
+Bugfix: fix a bug where event is suspended only 5 sec, not 5 min
+This update becomes FLASH update.</doc>
+<status status="FAIL" starttime="20201019 22:01:00.145" endtime="20201019 22:01:09.185"></status>
+</suite>
+<status status="FAIL" starttime="20201019 22:01:00.139" endtime="20201019 22:01:09.189"></status>
+</suite>
+<status status="FAIL" starttime="20201019 22:01:00.135" endtime="20201019 22:01:09.198"></status>
+</suite>
+<status status="FAIL" starttime="20201019 22:01:00.059" endtime="20201019 22:01:09.207"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1">manuals</stat>
+<stat pass="0" fail="1">manualstep</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" id="s1-s1" name="Manualrobot">Tests.Manualrobot</stat>
+<stat pass="0" fail="1" id="s1-s1-s1" name="Manualusecase">Tests.Manualrobot.Manualusecase</stat>
+<stat pass="0" fail="1" id="s1-s1-s1-s1" name="Manutestcase">Tests.Manualrobot.Manualusecase.Manutestcase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

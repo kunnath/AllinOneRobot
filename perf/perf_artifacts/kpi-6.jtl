@@ -1,0 +1,11 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,success,bytes,grpThreads,allThreads,Latency,Hostname,Connect
+1601907911176,17412,https://www.smartfrog.com/de-de,Non HTTP response code: javax.net.ssl.SSLHandshakeException,Non HTTP response message: Remote host closed connection during handshake,simple-ThreadStarter 1-4,false,2721,7,7,0,a7c0e2801c4f,17412
+1601907941346,1581,https://www.smartfrog.com/de-de,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,simple-ThreadStarter 1-9,false,2466,9,9,0,a7c0e2801c4f,1581
+1601907929437,13535,https://www.smartfrog.com/de-de/shop/register,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,simple-ThreadStarter 1-4,false,2850,9,9,0,a7c0e2801c4f,13535
+1601907905177,1729,https://www.smartfrog.com/de-de,200,OK,simple-ThreadStarter 1-3,true,36171,9,9,935,a7c0e2801c4f,295
+1601907893577,1451,https://www.smartfrog.com/de-de,200,OK,simple-ThreadStarter 1-1,true,36171,8,8,1423,a7c0e2801c4f,1209
+1601907929242,1825,https://www.smartfrog.com/de-de,200,OK,simple-ThreadStarter 1-7,true,36157,8,8,1421,a7c0e2801c4f,1105
+1601907899171,733,https://www.smartfrog.com/de-de,200,OK,simple-ThreadStarter 1-2,true,36140,8,8,396,a7c0e2801c4f,220
+1601907935215,2267,https://www.smartfrog.com/de-de,200,OK,simple-ThreadStarter 1-8,true,36183,8,8,1740,a7c0e2801c4f,1568
+1601907917183,2586,https://www.smartfrog.com/de-de,200,OK,simple-ThreadStarter 1-5,true,36149,8,8,1958,a7c0e2801c4f,1522
+1601907923213,1243,https://www.smartfrog.com/de-de,200,OK,simple-ThreadStarter 1-6,true,36142,7,7,1168,a7c0e2801c4f,768

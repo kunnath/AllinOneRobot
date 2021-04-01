@@ -1,0 +1,34 @@
+[2020-10-05 13:20:44,578 INFO root] Taurus CLI Tool v1.15.0
+[2020-10-05 13:20:44,579 DEBUG root] Command-line options: {'log': '/tmp/artifacts/bzt.log', 'option': None, 'quiet': None, 'verbose': None, 'no_system_configs': None, 'aliases': []}
+[2020-10-05 13:20:44,581 DEBUG root] Python: CPython 3.6.9
+[2020-10-05 13:20:44,582 DEBUG root] OS: uname_result(system='Linux', node='ab4f42af8243', release='4.19.76-linuxkit', version='#1 SMP Tue May 26 11:42:35 UTC 2020', machine='x86_64', processor='x86_64')
+[2020-10-05 13:20:44,585 INFO root] Starting with configs: ['/Users/sreelesh/Documents/USTGlobal/perf/perf_scripts/perf/perf_scripts/smartrog.yaml']
+[2020-10-05 13:20:44,587 DEBUG root] Using personal config: /root/.bzt-rc
+[2020-10-05 13:20:44,590 INFO Engine] Configuring...
+[2020-10-05 13:20:44,592 DEBUG Engine] Reading system configs from: /etc/bzt.d
+[2020-10-05 13:20:44,647 DEBUG Engine] Base configs list: ['/usr/local/lib/python3.6/dist-packages/bzt/resources/10-base-config.yml', '/etc/bzt.d/50-pbench-enhanced.json', '/etc/bzt.d/90-artifacts-dir.json', '/etc/bzt.d/99-zinstallID.json']
+[2020-10-05 13:20:44,647 DEBUG Engine.Configuration] Configs: ['/usr/local/lib/python3.6/dist-packages/bzt/resources/10-base-config.yml', '/etc/bzt.d/50-pbench-enhanced.json', '/etc/bzt.d/90-artifacts-dir.json', '/etc/bzt.d/99-zinstallID.json']
+[2020-10-05 13:20:44,648 DEBUG Engine.Configuration] Reading /usr/local/lib/python3.6/dist-packages/bzt/resources/10-base-config.yml as YAML
+[2020-10-05 13:20:44,688 DEBUG Engine.Configuration] Reading /etc/bzt.d/50-pbench-enhanced.json as YAML
+[2020-10-05 13:20:44,690 DEBUG Engine.Configuration] Reading /etc/bzt.d/90-artifacts-dir.json as YAML
+[2020-10-05 13:20:44,692 DEBUG Engine.Configuration] Reading /etc/bzt.d/99-zinstallID.json as YAML
+[2020-10-05 13:20:44,694 DEBUG Engine] User configs list: ['/root/.bzt-rc', '/Users/sreelesh/Documents/USTGlobal/perf/perf_scripts/perf/perf_scripts/smartrog.yaml']
+[2020-10-05 13:20:44,694 DEBUG Engine.Configuration] Configs: ['/root/.bzt-rc', '/Users/sreelesh/Documents/USTGlobal/perf/perf_scripts/perf/perf_scripts/smartrog.yaml']
+[2020-10-05 13:20:44,696 DEBUG Engine.Configuration] Reading /root/.bzt-rc as YAML
+[2020-10-05 13:20:44,703 ERROR root] Config Error: Error when reading config file '/Users/sreelesh/Documents/USTGlobal/perf/perf_scripts/perf/perf_scripts/smartrog.yaml': [Errno 2] No such file or directory: '/Users/sreelesh/Documents/USTGlobal/perf/perf_scripts/perf/perf_scripts/smartrog.yaml'
+[2020-10-05 13:20:44,707 DEBUG root] TaurusConfigError: Error when reading config file '/Users/sreelesh/Documents/USTGlobal/perf/perf_scripts/perf/perf_scripts/smartrog.yaml': [Errno 2] No such file or directory: '/Users/sreelesh/Documents/USTGlobal/perf/perf_scripts/perf/perf_scripts/smartrog.yaml'
+  File "/usr/local/lib/python3.6/dist-packages/bzt/cli.py", line 255, in perform
+    self.__configure(configs)
+  File "/usr/local/lib/python3.6/dist-packages/bzt/cli.py", line 168, in __configure
+    merged_config = self.engine.configure([bzt_rc] + configs, not self.options.no_system_configs)
+  File "/usr/local/lib/python3.6/dist-packages/bzt/engine/engine.py", line 123, in configure
+    merged_config = self._load_user_configs(user_configs)
+  File "/usr/local/lib/python3.6/dist-packages/bzt/engine/engine.py", line 600, in _load_user_configs
+    self.config.load(user_configs)
+  File "/usr/local/lib/python3.6/dist-packages/bzt/engine/dicts.py", line 170, in load
+    raise TaurusConfigError("Error when reading config file '%s': %s" % (config_file, exc))
+[2020-10-05 13:20:44,710 INFO Engine] Post-processing...
+[2020-10-05 13:20:44,712 INFO root] Artifacts dir: None
+[2020-10-05 13:20:44,715 INFO root] Log file: /tmp/artifacts/bzt.log
+[2020-10-05 13:20:44,716 WARNING root] Done performing with code: 1
+[2020-10-05 13:20:44,718 DEBUG root] Closing log handler: /tmp/artifacts/bzt.log

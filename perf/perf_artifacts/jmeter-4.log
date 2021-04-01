@@ -1,0 +1,54 @@
+2020-10-05 14:12:38,123 INFO o.a.j.u.JMeterUtils: Setting Locale to en_US
+2020-10-05 14:12:38,177 INFO o.a.j.JMeter: Loading user properties from: /root/.bzt/jmeter-taurus/5.2.1/bin/user.properties
+2020-10-05 14:12:38,180 INFO o.a.j.JMeter: Loading system properties from: /root/.bzt/jmeter-taurus/5.2.1/bin/system.properties
+2020-10-05 14:12:38,182 INFO o.a.j.JMeter: Loading additional properties from: /tmp/artifacts/jmeter-bzt-4.properties
+2020-10-05 14:12:38,189 INFO o.a.j.JMeter: Setting System properties from file: /tmp/artifacts/system-4.properties
+2020-10-05 14:12:38,200 INFO o.a.j.JMeter: Copyright (c) 1998-2019 The Apache Software Foundation
+2020-10-05 14:12:38,201 INFO o.a.j.JMeter: Version 5.2.1
+2020-10-05 14:12:38,202 INFO o.a.j.JMeter: java.version=1.8.0_265
+2020-10-05 14:12:38,203 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2020-10-05 14:12:38,204 INFO o.a.j.JMeter: os.name=Linux
+2020-10-05 14:12:38,205 INFO o.a.j.JMeter: os.arch=amd64
+2020-10-05 14:12:38,206 INFO o.a.j.JMeter: os.version=4.19.76-linuxkit
+2020-10-05 14:12:38,206 INFO o.a.j.JMeter: file.encoding=UTF-8
+2020-10-05 14:12:38,207 INFO o.a.j.JMeter: java.awt.headless=true
+2020-10-05 14:12:38,209 INFO o.a.j.JMeter: Max memory     =464519168
+2020-10-05 14:12:38,210 INFO o.a.j.JMeter: Available Processors =2
+2020-10-05 14:12:38,222 INFO o.a.j.JMeter: Default Locale=English (United States)
+2020-10-05 14:12:38,224 INFO o.a.j.JMeter: JMeter  Locale=English (United States)
+2020-10-05 14:12:38,225 INFO o.a.j.JMeter: JMeterHome=/root/.bzt/jmeter-taurus/5.2.1
+2020-10-05 14:12:38,226 INFO o.a.j.JMeter: user.dir  =/bzt-configs
+2020-10-05 14:12:38,228 INFO o.a.j.JMeter: PWD       =/bzt-configs
+2020-10-05 14:12:38,229 INFO o.a.j.JMeter: IP: 172.17.0.2 Name: 809e410fdc12 FullName: 809e410fdc12
+2020-10-05 14:12:38,231 INFO o.a.j.JMeter: user.classpath=/tmp/artifacts:/tmp/artifacts
+2020-10-05 14:12:38,233 INFO o.a.j.JMeter: Adding to classpath and loader: /tmp/artifacts
+2020-10-05 14:12:38,248 INFO o.a.j.JMeter: Adding to classpath and loader: /tmp/artifacts
+2020-10-05 14:12:38,283 INFO o.a.j.s.FileServer: Default base='/bzt-configs'
+2020-10-05 14:12:38,306 INFO o.a.j.s.FileServer: Set new base='/tmp/artifacts'
+2020-10-05 14:12:38,866 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2020-10-05 14:12:38,917 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2020-10-05 14:12:38,943 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2020-10-05 14:12:38,982 INFO o.a.j.s.SaveService: Loading file: /tmp/artifacts/modified_requests-4.jmx
+2020-10-05 14:12:39,150 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2020-10-05 14:12:39,159 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2020-10-05 14:12:39,220 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-10-05 14:12:39,221 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-10-05 14:12:39,222 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-10-05 14:12:39,223 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-10-05 14:12:39,224 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2020-10-05 14:12:39,225 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2020-10-05 14:12:39,404 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2020-10-05 14:12:39,408 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2020-10-05 14:12:39,409 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2020-10-05 14:12:39,447 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2020-10-05 14:12:39,448 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2020-10-05 14:12:41,063 INFO o.a.j.JMeter: Running test (1601907161062)
+2020-10-05 14:12:41,215 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : simple
+2020-10-05 14:12:41,215 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group simple.
+2020-10-05 14:12:41,216 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2020-10-05 14:12:41,237 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2020-10-05 14:12:41,238 INFO c.b.j.t.c.ConcurrencyThreadStarter: Start supplying threads
+2020-10-05 14:12:43,426 INFO o.a.j.JMeter: Command: Shutdown received from /127.0.0.1
+2020-10-05 14:12:43,432 INFO c.b.j.t.c.ConcurrencyThreadStarter: Done supplying threads
+2020-10-05 14:12:43,457 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2020-10-05 14:12:43,468 INFO o.a.j.e.StandardJMeterEngine: Forced JVM shutdown requested at end of test

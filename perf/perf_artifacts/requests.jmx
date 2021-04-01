@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jmeterTestPlan>
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testname="BZT Generated Test Plan" testclass="TestPlan" enabled="true">
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments"/>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="smartfrog" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">0</stringProp>
+        <stringProp name="ThreadGroup.start_time"></stringProp>
+        <stringProp name="ThreadGroup.end_time"></stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">0</stringProp>
+      </ThreadGroup>
+      <hashTree type="tg">
+        <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="Cache">
+          <boolProp name="clearEachIteration">true</boolProp>
+          <boolProp name="useExpires">true</boolProp>
+        </CacheManager>
+        <hashTree/>
+        <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="Cookies">
+          <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+          <stringProp name="CookieManager.implementation">org.apache.jmeter.protocol.http.control.HC4CookieHandler</stringProp>
+        </CookieManager>
+        <hashTree/>
+        <DNSCacheManager guiclass="DNSCachePanel" testclass="DNSCacheManager" testname="DNS Cache Manager">
+          <collectionProp name="DNSCacheManager.servers"/>
+          <boolProp name="DNSCacheManager.clearEachIteration">false</boolProp>
+          <boolProp name="DNSCacheManager.isCustomResolver">false</boolProp>
+        </DNSCacheManager>
+        <hashTree/>
+        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="Defaults">
+          <boolProp name="HTTPSampler.image_parser">true</boolProp>
+          <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+          <stringProp name="HTTPSampler.concurrentPool">4</stringProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="user_defined"/>
+        </ConfigTestElement>
+        <hashTree/>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Test">
+          <boolProp name="TransactionController.parent">false</boolProp>
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://translate.googleapis.com/translate_a/t?anno=3&amp;client=te_lib&amp;format=html&amp;v=1.0&amp;key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw&amp;logld=vTE_20200210_00&amp;sl=de&amp;tl=en&amp;sp=nmt&amp;tc=1&amp;dom=1&amp;sr=1&amp;tk=389505.215566&amp;mode=1">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="q" elementType="HTTPArgument">
+                  <stringProp name="Argument.name">q</stringProp>
+                  <stringProp name="Argument.value">&lt;a i=0&gt;See what &lt;/a&gt;&lt;a i=1&gt;your pet is doing &lt;/a&gt;&lt;a i=2&gt;from anywhere
+&lt;/a&gt;</stringProp>
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">translate.googleapis.com</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.path">/translate_a/t?anno=3&amp;client=te_lib&amp;format=html&amp;v=1.0&amp;key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw&amp;logld=vTE_20200210_00&amp;sl=de&amp;tl=en&amp;sp=nmt&amp;tc=1&amp;dom=1&amp;sr=1&amp;tk=389505.215566&amp;mode=1</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <stringProp name="HTTPSampler.connect_timeout">0</stringProp>
+            <stringProp name="HTTPSampler.response_timeout">0</stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Timeout Check">
+              <stringProp name="DurationAssertion.duration">0</stringProp>
+            </DurationAssertion>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://translate.googleapis.com/translate_a/t?anno=3&amp;client=te_lib&amp;format=html&amp;v=1.0&amp;key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw&amp;logld=vTE_20200210_00&amp;sl=de&amp;tl=en&amp;sp=nmt&amp;tc=1&amp;dom=1&amp;sr=1&amp;tk=330622.241905&amp;mode=1">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="q" elementType="HTTPArgument">
+                  <stringProp name="Argument.name">q</stringProp>
+                  <stringProp name="Argument.value">&lt;a i=0&gt;See &lt;/a&gt;&lt;a i=1&gt;if your child is fine &lt;/a&gt;&lt;a i=2&gt;around the clock
+&lt;/a&gt;</stringProp>
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">translate.googleapis.com</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.path">/translate_a/t?anno=3&amp;client=te_lib&amp;format=html&amp;v=1.0&amp;key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw&amp;logld=vTE_20200210_00&amp;sl=de&amp;tl=en&amp;sp=nmt&amp;tc=1&amp;dom=1&amp;sr=1&amp;tk=330622.241905&amp;mode=1</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <stringProp name="HTTPSampler.connect_timeout">0</stringProp>
+            <stringProp name="HTTPSampler.response_timeout">0</stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Timeout Check">
+              <stringProp name="DurationAssertion.duration">0</stringProp>
+            </DurationAssertion>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://translate.googleapis.com/translate_a/t?anno=3&amp;client=te_lib&amp;format=html&amp;v=1.0&amp;key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw&amp;logld=vTE_20200210_00&amp;sl=de&amp;tl=en&amp;sp=nmt&amp;tc=1&amp;dom=1&amp;sr=1&amp;tk=652476.1003315&amp;mode=1">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="q" elementType="HTTPArgument">
+                  <stringProp name="Argument.name">q</stringProp>
+                  <stringProp name="Argument.value">&lt;a i=0&gt;Always see if
+ &lt;/a&gt;&lt;a i=1&gt;your grandparents are doing well&lt;/a&gt;</stringProp>
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">translate.googleapis.com</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.path">/translate_a/t?anno=3&amp;client=te_lib&amp;format=html&amp;v=1.0&amp;key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw&amp;logld=vTE_20200210_00&amp;sl=de&amp;tl=en&amp;sp=nmt&amp;tc=1&amp;dom=1&amp;sr=1&amp;tk=652476.1003315&amp;mode=1</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <stringProp name="HTTPSampler.connect_timeout">0</stringProp>
+            <stringProp name="HTTPSampler.response_timeout">0</stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Timeout Check">
+              <stringProp name="DurationAssertion.duration">0</stringProp>
+            </DurationAssertion>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="login">
+          <boolProp name="TransactionController.parent">false</boolProp>
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://translate.googleapis.com/translate_a/t?anno=3&amp;client=te_lib&amp;format=html&amp;v=1.0&amp;key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw&amp;logld=vTE_20200210_00&amp;sl=de&amp;tl=en&amp;sp=nmt&amp;tc=1&amp;dom=1&amp;sr=1&amp;tk=328662.243801&amp;mode=1">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="q" elementType="HTTPArgument">
+                  <stringProp name="Argument.name">q</stringProp>
+                  <stringProp name="Argument.value">&lt;a i=0&gt;Protect your family
+ &lt;/a&gt;&lt;a i=1&gt;easily with Smartfrog&lt;/a&gt;</stringProp>
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">translate.googleapis.com</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.path">/translate_a/t?anno=3&amp;client=te_lib&amp;format=html&amp;v=1.0&amp;key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw&amp;logld=vTE_20200210_00&amp;sl=de&amp;tl=en&amp;sp=nmt&amp;tc=1&amp;dom=1&amp;sr=1&amp;tk=328662.243801&amp;mode=1</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <stringProp name="HTTPSampler.connect_timeout">0</stringProp>
+            <stringProp name="HTTPSampler.response_timeout">0</stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Timeout Check">
+              <stringProp name="DurationAssertion.duration">0</stringProp>
+            </DurationAssertion>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://translate.googleapis.com/translate_a/t?anno=3&amp;client=te_lib&amp;format=html&amp;v=1.0&amp;key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw&amp;logld=vTE_20200210_00&amp;sl=de&amp;tl=en&amp;sp=nmt&amp;tc=1&amp;dom=1&amp;sr=1&amp;tk=328662.243801&amp;mode=1">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="q" elementType="HTTPArgument">
+                  <stringProp name="Argument.name">q</stringProp>
+                  <stringProp name="Argument.value">&lt;a i=0&gt;Protect your family
+ &lt;/a&gt;&lt;a i=1&gt;easily with Smartfrog&lt;/a&gt;</stringProp>
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">translate.googleapis.com</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.path">/translate_a/t?anno=3&amp;client=te_lib&amp;format=html&amp;v=1.0&amp;key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw&amp;logld=vTE_20200210_00&amp;sl=de&amp;tl=en&amp;sp=nmt&amp;tc=1&amp;dom=1&amp;sr=1&amp;tk=328662.243801&amp;mode=1</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <stringProp name="HTTPSampler.connect_timeout">0</stringProp>
+            <stringProp name="HTTPSampler.response_timeout">0</stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Timeout Check">
+              <stringProp name="DurationAssertion.duration">0</stringProp>
+            </DurationAssertion>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://translate.googleapis.com/translate_a/t?anno=3&amp;client=te_lib&amp;format=html&amp;v=1.0&amp;key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw&amp;logld=vTE_20200210_00&amp;sl=de&amp;tl=en&amp;sp=nmt&amp;tc=1&amp;dom=1&amp;sr=1&amp;tk=469685.102714&amp;mode=1">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="q" elementType="HTTPArgument">
+                  <stringProp name="Argument.name">q</stringProp>
+                  <stringProp name="Argument.value">&lt;a i=0&gt;See what&amp;#39;s happening &lt;/a&gt;&lt;a i=1&gt;at home &lt;/a&gt;&lt;a i=2&gt;from anywhere
+&lt;/a&gt;</stringProp>
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.domain">translate.googleapis.com</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.path">/translate_a/t?anno=3&amp;client=te_lib&amp;format=html&amp;v=1.0&amp;key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw&amp;logld=vTE_20200210_00&amp;sl=de&amp;tl=en&amp;sp=nmt&amp;tc=1&amp;dom=1&amp;sr=1&amp;tk=469685.102714&amp;mode=1</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <stringProp name="HTTPSampler.connect_timeout">0</stringProp>
+            <stringProp name="HTTPSampler.response_timeout">0</stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Timeout Check">
+              <stringProp name="DurationAssertion.duration">0</stringProp>
+            </DurationAssertion>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+      <ResultCollector testname="View Results Tree" testclass="ResultCollector" guiclass="ViewResultsFullVisualizer"/>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

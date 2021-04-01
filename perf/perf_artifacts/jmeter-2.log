@@ -1,0 +1,75 @@
+2020-10-05 14:00:15,357 INFO o.a.j.u.JMeterUtils: Setting Locale to en_US
+2020-10-05 14:00:15,411 INFO o.a.j.JMeter: Loading user properties from: /root/.bzt/jmeter-taurus/5.2.1/bin/user.properties
+2020-10-05 14:00:15,412 INFO o.a.j.JMeter: Loading system properties from: /root/.bzt/jmeter-taurus/5.2.1/bin/system.properties
+2020-10-05 14:00:15,414 INFO o.a.j.JMeter: Loading additional properties from: /tmp/artifacts/jmeter-bzt-2.properties
+2020-10-05 14:00:15,422 INFO o.a.j.JMeter: Setting System properties from file: /tmp/artifacts/system-2.properties
+2020-10-05 14:00:15,437 INFO o.a.j.JMeter: Copyright (c) 1998-2019 The Apache Software Foundation
+2020-10-05 14:00:15,438 INFO o.a.j.JMeter: Version 5.2.1
+2020-10-05 14:00:15,439 INFO o.a.j.JMeter: java.version=1.8.0_265
+2020-10-05 14:00:15,440 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2020-10-05 14:00:15,442 INFO o.a.j.JMeter: os.name=Linux
+2020-10-05 14:00:15,444 INFO o.a.j.JMeter: os.arch=amd64
+2020-10-05 14:00:15,445 INFO o.a.j.JMeter: os.version=4.19.76-linuxkit
+2020-10-05 14:00:15,446 INFO o.a.j.JMeter: file.encoding=UTF-8
+2020-10-05 14:00:15,448 INFO o.a.j.JMeter: java.awt.headless=true
+2020-10-05 14:00:15,449 INFO o.a.j.JMeter: Max memory     =464519168
+2020-10-05 14:00:15,450 INFO o.a.j.JMeter: Available Processors =2
+2020-10-05 14:00:15,460 INFO o.a.j.JMeter: Default Locale=English (United States)
+2020-10-05 14:00:15,462 INFO o.a.j.JMeter: JMeter  Locale=English (United States)
+2020-10-05 14:00:15,463 INFO o.a.j.JMeter: JMeterHome=/root/.bzt/jmeter-taurus/5.2.1
+2020-10-05 14:00:15,464 INFO o.a.j.JMeter: user.dir  =/bzt-configs
+2020-10-05 14:00:15,466 INFO o.a.j.JMeter: PWD       =/bzt-configs
+2020-10-05 14:00:15,467 INFO o.a.j.JMeter: IP: 172.17.0.2 Name: 05998a1f5c4e FullName: 05998a1f5c4e
+2020-10-05 14:00:15,468 INFO o.a.j.JMeter: user.classpath=/tmp/artifacts:/tmp/artifacts
+2020-10-05 14:00:15,470 INFO o.a.j.JMeter: Adding to classpath and loader: /tmp/artifacts
+2020-10-05 14:00:15,480 INFO o.a.j.JMeter: Adding to classpath and loader: /tmp/artifacts
+2020-10-05 14:00:15,506 INFO o.a.j.s.FileServer: Default base='/bzt-configs'
+2020-10-05 14:00:15,526 INFO o.a.j.s.FileServer: Set new base='/tmp/artifacts'
+2020-10-05 14:00:16,030 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2020-10-05 14:00:16,058 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2020-10-05 14:00:16,075 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2020-10-05 14:00:16,103 INFO o.a.j.s.SaveService: Loading file: /tmp/artifacts/modified_requests-2.jmx
+2020-10-05 14:00:16,269 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2020-10-05 14:00:16,276 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2020-10-05 14:00:16,325 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-10-05 14:00:16,326 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-10-05 14:00:16,327 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-10-05 14:00:16,328 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-10-05 14:00:16,329 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2020-10-05 14:00:16,329 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2020-10-05 14:00:16,489 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2020-10-05 14:00:16,500 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2020-10-05 14:00:16,501 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2020-10-05 14:00:16,535 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2020-10-05 14:00:16,536 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2020-10-05 14:00:17,946 INFO o.a.j.JMeter: Running test (1601906417946)
+2020-10-05 14:00:18,032 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : simple
+2020-10-05 14:00:18,033 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group simple.
+2020-10-05 14:00:18,034 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2020-10-05 14:00:18,048 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2020-10-05 14:00:18,048 INFO c.b.j.t.c.ConcurrencyThreadStarter: Start supplying threads
+2020-10-05 14:00:21,081 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2020-10-05 14:00:21,083 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2020-10-05 14:00:21,083 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2020-10-05 14:00:21,085 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2020-10-05 14:00:21,104 INFO o.a.j.t.JMeterThread: Thread started: simple-ThreadStarter 1-1
+2020-10-05 14:00:21,950 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = 05998a1f5c4e
+2020-10-05 14:00:21,978 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2020-10-05 14:00:22,308 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2020-10-05 14:00:22,340 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2020-10-05 14:00:22,341 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2020-10-05 14:00:22,791 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2020-10-05 14:00:22,806 INFO o.a.j.u.SSLManager: KeyStore created OK
+2020-10-05 14:00:22,807 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2020-10-05 14:00:23,629 INFO o.a.j.p.h.p.BaseParser: Created org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-10-05 14:00:23,965 INFO o.a.j.p.h.s.ResourcesDownloader: Creating ResourcesDownloader with keepalive_inseconds : 60
+2020-10-05 14:00:24,201 INFO o.a.j.p.h.p.BaseParser: Created org.apache.jmeter.protocol.http.parser.CssParser
+2020-10-05 14:00:27,102 INFO o.a.j.t.JMeterThread: Thread started: simple-ThreadStarter 1-2
+2020-10-05 14:00:33,085 INFO o.a.j.t.JMeterThread: Thread started: simple-ThreadStarter 1-3
+2020-10-05 14:00:39,094 INFO o.a.j.t.JMeterThread: Thread started: simple-ThreadStarter 1-4
+2020-10-05 14:00:45,115 INFO o.a.j.t.JMeterThread: Thread started: simple-ThreadStarter 1-5
+2020-10-05 14:00:51,125 INFO o.a.j.t.JMeterThread: Thread started: simple-ThreadStarter 1-6
+2020-10-05 14:00:57,132 INFO o.a.j.t.JMeterThread: Thread started: simple-ThreadStarter 1-7
+2020-10-05 14:01:03,125 INFO o.a.j.t.JMeterThread: Thread started: simple-ThreadStarter 1-8
+2020-10-05 14:01:09,133 INFO o.a.j.t.JMeterThread: Thread started: simple-ThreadStarter 1-9
+2020-10-05 14:01:15,160 INFO o.a.j.t.JMeterThread: Thread started: simple-ThreadStarter 1-10
